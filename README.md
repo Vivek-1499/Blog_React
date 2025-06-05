@@ -1,12 +1,90 @@
-# React + Vite
+# 📝 React Blog Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal yet functional Blog Site built with **React** and **Vite**. This app demonstrates basic CRUD operations using a mock REST API (`json-server`). It includes routing, loading/error handling, and blog management features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Fast React setup using **Vite**
+- 🧭 Client-side routing with **React Router**
+- 📡 Custom data fetching hook using `fetch`
+- 🗑️ Delete blog posts
+- 🧭 Dynamic route handling (`/blogs/:id`)
+- 🌐 Mock backend with `json-server`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+```
+
+blog/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── BlogDetails.jsx
+│   ├── Home.jsx
+│   ├── Navbar.jsx
+│   ├── useFetch.js
+│   └── index.css
+├── db.json                # Mock API data
+├── package.json
+├── vite.config.js
+└── README.md
+
+````
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Vivek-1499/Blog_React.git
+cd Blog_React
+
+# 2. Install dependencies
+npm install
+
+# 3. Run mock backend
+npx json-server --watch db.json --port 8000
+
+# 4. Start the React app
+npm run dev
+````
+
+---
+
+## 📦 Available Scripts
+
+* `npm run dev` — Run development server
+* `npm run build` — Build app for production
+* `npm run preview` — Preview production build
+* `npx json-server --watch db.json --port 8000` — Start mock API
+
+---
+
+## 🖥️ Pages
+
+| Route                  | Description         |
+| ---------------------- | ------------------- |
+| `/`                    | Home with blog list |
+| `/blogs/:id`           | Blog details view   |
+| `/create` *(optional)* | Add new blog post   |
+
+---
+
+## 📚 Technologies Used
+
+* [React](https://reactjs.org/)
+* [Vite](https://vitejs.dev/)
+* [React Router](https://reactrouter.com/)
+* [json-server](https://github.com/typicode/json-server)
+
+---
+
+## 📸 Screenshots
+
+> 
